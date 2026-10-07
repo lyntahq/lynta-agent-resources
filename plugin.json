@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lynta-public-info",
+  "version": "1.0.0",
+  "description": "Search and cite Lynta's public product guides, pricing, and integration availability.",
+  "author": {
+    "name": "Lynta",
+    "url": "https://lyntahq.com"
+  },
+  "homepage": "https://lyntahq.com/developers",
+  "repository": "https://github.com/lyntahq/lynta-agent-resources",
+  "keywords": [
+    "lynta",
+    "documentation",
+    "realtime",
+    "pricing",
+    "mcp"
+  ]
+}

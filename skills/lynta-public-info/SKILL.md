@@ -15,10 +15,10 @@ Use it when a user wants to understand Lynta's published product capabilities, p
 
 ## Steps
 
-1. Query `POST https://lyntahq.com/ask` with JSON shaped as `{"query":{"text":"the user's question"}}`.
-2. Read the returned page names, descriptions, and URLs. The search ranks existing public pages by keyword relevance; it does not generate a response.
-3. Open the cited pages and answer from their content. Link the pages used as sources.
-4. If the MCP client supports resources, use `resources/list` and `resources/read` for the published Markdown pages at `lynta://public-docs/{page}`.
+1. Use a retrieval method available to the current assistant: call the read-only MCP `search_public_docs` tool, or send `POST https://lyntahq.com/ask` with JSON shaped as `{"query":{"text":"the user's question"}}`. The `/ask` endpoint searches published website pages and returns source links; it does not generate an answer.
+2. If neither tool is available, use the assistant's web or URL-reading capability to open the relevant pages listed under Sources. If no retrieval capability is available, say you cannot verify the current public information and do not guess.
+3. Read the cited pages and answer from their content. Link the pages used as sources, and distinguish published facts from details the site does not state.
+4. If the MCP client supports resources, use `resources/list` and `resources/read` for published Markdown pages at `lynta://public-docs/{page}`.
 5. If the user asks how to integrate a customer application, clarify that the public site does not provide a customer product API, SDK, authentication flow, sandbox, or product-action MCP server. Direct them to the [early access form](https://tally.so/r/jaOogE).
 
 ## Boundaries

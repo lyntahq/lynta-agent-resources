@@ -11,6 +11,8 @@ The MCP server can search and return published website pages. It cannot access c
 
 ## Install the skill
 
+Browse the [Lynta public-information skill on skills.sh](https://skills.sh/lyntahq/lynta-agent-resources/lynta-public-info).
+
 ```sh
 npx skills add lyntahq/lynta-agent-resources
 ```
